@@ -1,6 +1,6 @@
-# Berkeley Eco Engine compare demo
+# Berkeley Eco Engine Compare
 
-For issues with this repository, please file over at [http://github.com/stamen/ecoengine/issues](http://github.com/stamen/ecoengine/issues)
+Find the live version of Compare [here](https://holos.berkeley.edu/compare/).
 
 ## Setup
 
@@ -10,25 +10,11 @@ npm install
 cp .env.json.sample .env.json
 ```
 
-## Deploy
-
-```bash
-gulp dist
-scp -prq ./public/. studio.stamen.com:www/berkeley/show/compare/
-scp -prq ./public/. studio.stamen.com:www/berkeley/show/compare-[year]-[month]-[day]/
-```
-
-Open [http://studio.stamen.com/berkeley/show/compare/](http://studio.stamen.com/berkeley/show/compare/)
-
-This ...
-
 ## Develop
 
 ```bash
 npm start
 ```
-
-This ...
 
 Open [http://localhost:8000/](http://localhost:8000/)
 
@@ -47,7 +33,7 @@ _All bower components are bundled into the minified JS for the site. Any require
    * All js is included in the footer.
 
 ## Holos integration
-A django/ninja2 compatible template has been added to the root of the build directory. This can be used as a ninja2 include to bring in the markup needed to run this application without the header and footer. The following files need to be linked in the main document:
+A django/jinja2 compatible template has been added to the root of the build directory. This can be used as a jinja2 include to bring in the markup needed to run this application without the header and footer. The following files need to be linked in the main document:
 
    * css/vendor.css (in the document head)
    * css/base.css (in the document head)
